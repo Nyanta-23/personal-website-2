@@ -215,7 +215,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 40%;
 }
 
 #content .services-list {
