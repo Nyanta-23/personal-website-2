@@ -8,6 +8,10 @@
 
 /* My Style */
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -15,6 +19,7 @@ body {
   overflow-x: hidden !important;
   font-family: 'Poppins', Arial, Helvetica sans-serif;
   background-color: var(--background);
+
   color: var(--text);
   font-weight: 400;
 }
@@ -137,44 +142,65 @@ body {
 }
 
 
-/* Main Content */
+/* Hero Content */
 
 #herosection {
   /* background-color: var(); */
   padding: 70px 3% 0;
 }
 
-#herosection .left-hero h1 {
-  font-size: 2rem;
-}
-
-#herosection .right-hero {
-  display: flex;
-  justify-content: center;
-}
-
-#herosection .right-hero figure {
-  width: 50%;
-  overflow-x: hidden;
-}
-
-#herosection .right-hero figure img {
-  width: 100%;
+#herosection .hero {
+  padding: 2rem;
   margin: 0;
-  padding: 0;
 }
 
-#content section .list-social-icon {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 20px;
+#herosection .hero h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+#herosection .hero a {
+  display: block;
+  width: 100px;
+  padding: 10px;
+  background: linear-gradient(to right, var(--accent), var(--primary));
+  text-align: center;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
-/* Main Content */
+/* Animation */
+
+.block {
+  border: 10px solid var(--primary);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: -999;
+  top: 25%;
+  left: 70%;
+  animation: infiniteRotateBlock 10s linear infinite;
+  background-color: transparent;
+}
+
+
+@keyframes infiniteRotateBlock {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation */
+
+
+/* Hero Content */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
