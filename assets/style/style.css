@@ -215,6 +215,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-top: 40%;
 }
 
 #content .services-list {
@@ -283,7 +284,7 @@ body {
 /* Footer */
 
 footer {
-  padding: 30% 3%;
+  padding: 3% 3%;
   font-size: 1rem;
   text-align: center;
 }
