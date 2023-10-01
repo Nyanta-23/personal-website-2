@@ -1,18 +1,15 @@
-function reverseArr(arr) {
+"use strict"
 
-  if (arr.length === 1) return arr;
+const navMob = document.getElementById('mobile');
+const buttonMob = document.getElementById('btn-mob');
+const lineAnim = buttonMob.getElementsByTagName('span');
 
-  const reverseArr = [];
+// Button Mobile Navigation
+buttonMob.addEventListener('click', () => {
+  navMob.classList.toggle('display-mobile');
 
-  for (let i = arr.length - 1; i >= 0; i--) {
-    reverseArr.push(arr[i]);
+  for (let i = 0; i < lineAnim.length; i++) {
+    lineAnim[i].classList.toggle('anim-direct')
   }
-  return reverseArr;
-}
+});
 
-console.log(reverseArr([1, 4, 6, 7]));
-console.log(reverseArr([5]));
-
-
-// data masukin
-// check persatu
