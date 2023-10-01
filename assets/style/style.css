@@ -9,7 +9,7 @@
 /* My Style */
 
 html {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,9 +17,9 @@ body {
   padding: 0 !important;
   box-sizing: border-box !important;
   overflow-x: hidden !important;
+  position: relative;
   font-family: 'Poppins', Arial, Helvetica sans-serif;
   background-color: var(--background);
-
   color: var(--text);
   font-weight: 400;
 }
@@ -28,7 +28,7 @@ body {
 #navbar {
   position: fixed;
   background-color: var(--primary);
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +162,7 @@ body {
 #herosection .hero a {
   display: block;
   width: 100px;
+  margin-top: 10%;
   padding: 10px;
   background: linear-gradient(to right, var(--accent), var(--primary));
   text-align: center;
