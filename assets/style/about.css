@@ -1,0 +1,31 @@
+:root {
+  --text: #ebe9fc;
+  --background: #010104;
+  --primary: #3a31d8;
+  --secondary: #020024;
+  --accent: #0600c2;
+}
+
+#about {
+  text-align: left;
+  margin: 80px 3% 0;
+}
+
+.myname {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.button-touch {
+  display: inline-block;
+  background: linear-gradient(to right, var(--accent), var(--secondary));
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#get-touch {
+  margin: 100px 0 80px;
+}

@@ -184,6 +184,7 @@ body {
 
 .block {
   border: 10px solid var(--primary);
+  /* border: 10px solid #11C001; */
   width: 200px;
   height: 200px;
   position: absolute;
@@ -215,6 +216,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 120px 0 50px;
 }
 
 #content .services-list {
