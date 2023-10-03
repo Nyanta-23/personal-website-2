@@ -285,6 +285,7 @@ body {
 /* Footer */
 
 footer {
+  margin-top: 100px;
   padding: 3% 3%;
   font-size: 1rem;
   text-align: center;

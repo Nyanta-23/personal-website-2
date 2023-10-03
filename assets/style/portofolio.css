@@ -1,0 +1,47 @@
+:root {
+  --text: #ebe9fc;
+  --background: #010104;
+  --primary: #3a31d8;
+  --secondary: #020024;
+  --accent: #0600c2;
+}
+
+#portofolio {
+  margin: 80px 3% 0;
+}
+
+
+.list-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  list-style: none !important;
+}
+
+.box-project {
+  margin: 20px 0;
+}
+
+.box-project a {
+  display: block;
+  text-decoration: none;
+  padding: 0;
+  color: var(--text);
+}
+
+
+figcaption h4 {
+  text-decoration: none;
+  margin: 0;
+}
+
+figcaption p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
