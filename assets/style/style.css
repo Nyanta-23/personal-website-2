@@ -430,6 +430,53 @@ footer {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  #navbar a {
+    font-size: 1rem !important;
+  }
+
+  #desktop ul li a {
+    font-size: 1rem !important;
+  }
+
+  .hero h1 {
+    font-size: 3rem !important;
+  }
+
+  .hero p {
+    font-size: 1.8rem !important;
+  }
+
+  .hero a {
+    display: inline-block;
+    width: fit-content !important;
+    font-size: 1.8rem !important;
+    padding: 10px 20px !important;
+  }
+
+  #services h3 {
+    font-size: 2.5rem;
+  }
+
+  #services ul {
+    gap: 70px !important;
+  }
+
+  #services ul li .service-box {
+    width: fit-content;
+  }
+
+  .service-box figcaption h4 {
+    font-size: 1.1rem;
+  }
+
+  #social h3 {
+    font-size: 2.5rem;
+  }
+
+  #social ul li a i {
+    font-size: 5rem;
+  }
 }
 
 /* My Style */
