@@ -68,6 +68,21 @@ h5 {
   z-index: 999;
 }
 
+.scrolling-navbar {
+  background-color: var(--text) !important;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.scrolling-navbar #profile {
+  color: var(--background) !important;
+}
+
+.scrolling-navbar #btn-mob span {
+  background-color: var(--background);
+}
+
 
 #navbar a {
   font-size: 0.7rem !important;
@@ -88,6 +103,7 @@ h5 {
   padding: 0px;
   overflow: hidden;
   position: relative;
+
 }
 
 #btn-mob span {
@@ -97,6 +113,7 @@ h5 {
   background-color: var(--text);
   position: absolute;
   left: 2px;
+  transition-property: none;
 }
 
 #btn-mob span:nth-child(1) {

@@ -24,6 +24,9 @@ buttonMob.addEventListener('click', () => {
 // Scroll effect
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
-    navbar.classList.toggle('');
+    return [
+      navbar.classList.add('scrolling-navbar'),
+    ]
   }
+  return navbar.classList.remove('scrolling-navbar')
 });
