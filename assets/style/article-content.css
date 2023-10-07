@@ -4,8 +4,24 @@
   --primary: #3a31d8;
   --secondary: #020024;
   --accent: #0600c2;
+
+  --paragraph: 0.750rem;
+  --h1: 4.210rem;
+  --h2: 3.158rem;
+  --h3: 2.369rem;
+  --h4: 1.777rem;
+  --h5: 1.333rem;
 }
 
 #article-content {
-  margin: 80px 3% 0;
+  margin: 150px 20px 0;
+  font-size: var(--paragraph) + 1;
+}
+
+#article-content h1 {
+  font-size: var(--h3);
+}
+
+#article-content ul {
+  margin: 0 20px;
 }
