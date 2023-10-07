@@ -83,7 +83,11 @@ h5 {
 }
 
 .scrolling-navbar #btn-mob span {
-  background-color: var(--background);
+  background-color: var(--background) !important;
+}
+
+.scrolling-navbar #desktop a {
+  color: var(--background) !important;
 }
 
 
