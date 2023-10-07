@@ -13,9 +13,20 @@
   --h5: 1.333rem;
 }
 
+/* Class style */
 
+.text-blue-gradient {
+  background-image: -webkit-linear-gradient(120deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-/* My Style */
+.fw-bold {
+  font-weight: bold !important;
+}
+
+/* Class style */
+
 
 html {
   overflow-x: hidden;
@@ -173,10 +184,12 @@ h5 {
 }
 
 
+
+
 /* Hero Content */
 
 #herosection {
-  margin: 20% 3% 0;
+  margin: 150px 3% 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -192,12 +205,6 @@ h5 {
   margin: 0;
 }
 
-#herosection .hero h1 span {
-  font-size: var(--h2);
-  background-image: -webkit-linear-gradient(120deg, var(--primary), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 #herosection .hero a {
   display: inline-block;
@@ -241,8 +248,8 @@ h5 {
 /* Animation */
 /* Hero Content */
 
-/* Main Content */
 
+/* Main Content */
 #content {
   text-align: center;
   display: flex;
@@ -252,39 +259,57 @@ h5 {
 
 /* Services */
 
-#services {}
+#services {
+  margin: 150px 0 0;
+}
 
-#services .services-list {
+#services h3 {
+  font-size: var(--h4);
+}
+
+#services h3 span {
+  font-size: var(--h4);
+  color: var(--primary);
+}
+
+#services ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-#services .services-list li {
+  padding: 10px;
   list-style: none;
+
 }
 
-#services .services-list li .service-box {
-  border-radius: 5px;
+#services ul li {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+#services ul li .service-box {
   display: flex;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin: 0 20px;
+  width: 300px;
+
 }
 
-#services .services-list li .service-box figure figcaption h4 {
+#services ul li .service-box figure figcaption h4 {
   font-size: var(--h5);
 }
 
-#services .services-list li .service-box figure i {
+#services ul li .service-box figure i {
   font-size: 6rem;
   color: var(--accent);
 }
 
-#services .services-list li .service-box figure .text-caption {
-  font-size: var(--paragraph);
+#services ul li .service-box figure .text-caption {
+  font-size: var(--paragraph) + 0.5;
   padding: 30px 10px;
 }
 
@@ -296,7 +321,7 @@ h5 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 30% 3%;
+  margin: 150px 0 0;
 }
 
 #social ul {
@@ -328,7 +353,7 @@ h5 {
 /* linear-gradient(120deg,var(--primary),var(--accent)) */
 
 footer {
-  margin: 0;
+  margin: 150px 0 0;
   padding: 0;
   /* margin-top: 50px; */
   padding: 2% 2% 1%;
@@ -355,7 +380,7 @@ footer {
     font-size: 2rem;
   }
 
-  #content .services-list li {
+  #content ul li {
     padding: 0;
     margin: 0;
     display: flex;
@@ -525,5 +550,3 @@ footer {
     font-size: 3.5rem;
   }
 }
-
-/* My Style */
