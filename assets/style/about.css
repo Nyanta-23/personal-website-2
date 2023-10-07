@@ -4,28 +4,58 @@
   --primary: #3a31d8;
   --secondary: #020024;
   --accent: #0600c2;
+
+  --paragraph: 0.750rem;
+  --h1: 4.210rem;
+  --h2: 3.158rem;
+  --h3: 2.369rem;
+  --h4: 1.777rem;
+  --h5: 1.333rem;
 }
 
 #about {
   text-align: left;
-  margin: 80px 3% 0;
+  margin: 150px 20px 0;
+}
+
+#about h1 {
+  font-size: var(--h3);
+}
+
+#greetings p {
+  font-size: var(--paragraph) + 1;
 }
 
 .myname {
   color: var(--primary);
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+#get-touch {
+  margin: 150px 0 0px;
+  /* text-align: center; */
+  font-size: var(--paragraph) + 1;
+}
+
+#get-touch h2 {
+  font-size: var(--h3);
+}
+
+#get-touch h3 {
+  font-size: var(--h5);
+}
+
+#get-touch p {
+  /* color: var(--secondary); */
+  color: var(--text);
 }
 
 .button-touch {
   display: inline-block;
-  background: linear-gradient(to right, var(--accent), var(--secondary));
+  background-color: var(--primary);
   color: var(--text);
   text-decoration: none;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 40px;
+  border-radius: 9999px;
   font-size: 1rem;
-}
-
-#get-touch {
-  margin: 100px 0 80px;
 }
