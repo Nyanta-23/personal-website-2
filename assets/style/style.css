@@ -66,6 +66,9 @@ h5 {
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .scrolling-navbar {
@@ -113,7 +116,6 @@ h5 {
   background-color: var(--text);
   position: absolute;
   left: 2px;
-  transition-property: none;
 }
 
 #btn-mob span:nth-child(1) {
