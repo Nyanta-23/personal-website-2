@@ -83,11 +83,11 @@ h5 {
 }
 
 .scrolling-navbar #btn-mob span {
-  background-color: var(--background) !important;
+  background-color: var(--background);
 }
 
-.scrolling-navbar #desktop a {
-  color: var(--background) !important;
+.scrolling-navbar #desktop {
+  color: var(--background);
 }
 
 
@@ -194,9 +194,10 @@ h5 {
 #mobile ul li a {
   display: inline-block;
   width: 100%;
-  height: 10vh;
-  line-height: 10vh;
+  height: 20vh;
+  line-height: 20vh;
   margin: 0;
+  font-size: var(--h4) !important;
 }
 
 #mobile ul li:hover {
@@ -261,6 +262,12 @@ h5 {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#herosection .hero a:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 20px 80px -10px var(--primary);
 }
 
 
@@ -329,28 +336,34 @@ h5 {
 }
 
 #services ul li .service-box {
-  display: flex;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 10px;
   margin: 0 20px;
   width: 300px;
-
+  transition: all 0.5s ease-in-out;
 }
 
-#services ul li .service-box figure figcaption h4 {
+.service-box:hover {
+  background-color: var(--primary) !important;
+  color: var(--background);
+  transition: all 0.5s ease-in-out;
+}
+
+#services ul li .service-box h4 {
   font-size: var(--h5);
+  color: var(--text) !important;
 }
 
-#services ul li .service-box figure i {
+.service-box i {
   font-size: 6rem;
-  color: var(--accent);
+  /* color: var(--accent); */
 }
 
-#services ul li .service-box figure .text-caption {
+#services ul li .service-box .text-caption {
   font-size: var(--paragraph) + 0.5;
   padding: 30px 10px;
+  color: var(--text);
 }
 
 /* Services */
@@ -385,6 +398,13 @@ h5 {
 
 #social ul li a i {
   font-size: var(--h2);
+  transition: all 0.5s ease-in-out;
+}
+
+#social ul li a i:hover {
+  transition: all 0.5s ease-in-out;
+  transform: rotateY(360deg);
+  color: var(--accent);
 }
 
 /* Social */

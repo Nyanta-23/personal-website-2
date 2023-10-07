@@ -7,6 +7,7 @@ const buttonMob = document.getElementById('btn-mob');
 const lineAnim = buttonMob.getElementsByTagName('span');
 
 
+
 // Left Style Responsive Mobile Adjustment
 navMob.style.left = `${window.innerWidth}px`;
 
