@@ -1,6 +1,6 @@
 # personal-website-2
 
-You can check this web on below links:
+You can check this web on this links:
 https://ihaannn-personal-web.netlify.app/
 
 
