@@ -18,14 +18,14 @@
 }
 
 #portofolio h1 {
-  font-size: var(--h3);
+  font-size: var(--h4);
 }
 
 #portofolio h2 {
-  font-size: var(--h4) - 0.177;
+  font-size: var(--h5) - 0.177;
 }
 
-ul {
+#portofolio ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,4 +54,40 @@ figcaption p {
 
 img {
   width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  #portofolio {
+    margin: 150px 40px 0;
+  }
+
+  .box-project {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-project a {
+    width: 90%;
+  }
+
+  h3 {
+    font-size: var(--h5) !important;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  #portofolio {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #portofolio {
+    margin-left: 250px !important;
+    margin-right: 250px !important;
+  }
 }
