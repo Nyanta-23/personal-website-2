@@ -19,11 +19,11 @@
 }
 
 #about h1 {
-  font-size: var(--h3);
+  font-size: var(--h4);
 }
 
 #greetings p {
-  font-size: var(--paragraph) + 1;
+  font-size: var(--paragraph) + 0.5;
 }
 
 .myname {
@@ -38,15 +38,15 @@
 }
 
 #get-touch h2 {
-  font-size: var(--h3);
+  font-size: var(--h4);
 }
 
 #get-touch h3 {
-  font-size: var(--h5);
+  font-size: var(--paragraph) + 3;
 }
 
 #get-touch p {
-  /* color: var(--secondary); */
+  font-size: var(--paragraph) + 1;
   color: var(--text);
 }
 
@@ -58,4 +58,64 @@
   padding: 10px 40px;
   border-radius: 9999px;
   font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-touch:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 20px 80px -10px var(--primary);
+}
+
+@media only screen and (min-width: 600px) {
+  #about h1 {
+    font-size: var(--h3) !important;
+  }
+
+  h2 {
+    font-size: var(--h4) !important;
+  }
+
+  #get-touch h3 {
+    font-size: var(--h5) - 0.3 !important;
+    margin-right: 200px;
+  }
+
+  #get-touch p {
+    margin-right: 80px;
+    font-size: var(--paragraph) + 0.2 !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  #about {
+    margin: 150px 10vw;
+  }
+
+  #greetings {
+    margin: 0 5vw !important;
+  }
+
+
+  #get-touch {
+    text-align: center;
+  }
+
+  #get-touch p,
+  #get-touch h3,
+  #get-touch h2 {
+    margin: 20px 15px;
+  }
+
+  #get-touch h2 {
+    font-size: var(--h2) !important;
+  }
+
+  #get-touch h3 {
+    font-size: var(--h5) !important;
+  }
+
+  #get-touch p {
+    font-size: var(--paragraph);
+  }
 }
