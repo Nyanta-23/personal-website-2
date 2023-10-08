@@ -17,6 +17,7 @@
 
 .text-blue-gradient {
   background-image: -webkit-linear-gradient(120deg, var(--primary), var(--accent));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -86,10 +87,9 @@ h5 {
   background-color: var(--background);
 }
 
-.scrolling-navbar #desktop {
-  color: var(--background);
+.scrolling-navbar #desktop ul li a {
+  color: var(--background) !important;
 }
-
 
 #navbar a {
   font-size: 0.7rem !important;
@@ -215,9 +215,6 @@ h5 {
   z-index: -1;
 }
 
-.display-mobile {
-  display: block !important;
-}
 
 #desktop {
   display: none;
@@ -235,9 +232,7 @@ h5 {
 
 #herosection {
   margin: 150px 3% 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  text-align: left;
 }
 
 #herosection .hero {
@@ -338,6 +333,7 @@ h5 {
   background: rgba(255, 255, 255, 0.02);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   margin: 0 20px;
   width: 300px;
   transition: all 0.5s ease-in-out;
@@ -420,7 +416,6 @@ footer {
   padding: 20px 0;
   font-size: 1rem;
   text-align: center;
-
 }
 
 /* Footer */
@@ -429,64 +424,77 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #herosection {
-    margin: 30% 3% 20%;
+    margin: 250px 20px 0;
   }
 
-  #content {
-    padding: 100px 0 50px;
+  #herosection .hero h1 {
+    font-size: var(--h3);
   }
 
-
-  #services h3 {
-    font-size: 2rem;
+  #herosection .hero p {
+    font-size: var(--paragraph)+1;
   }
 
-  #content ul li {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  h3 {
+    font-size: var(--h4) !important;
   }
 
-  #content .services-list li .service-box {
-    width: 60%;
+  h4 {
+    font-size: var(--h5) !important;
+  }
+
+  #services {
+    margin: 250px 20px 0;
+  }
+
+  .service-box i {
+    font-size: 8em;
   }
 
   #social {
-    margin: 10% 3%;
+    margin: 150px 20px 0;
   }
 
-  #content {
-    margin: 0;
-    padding: 0;
-  }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #herosection {
-    margin: 30% 3% 20%;
+    text-align: center;
+    margin: 350px 0 0;
   }
 
-  #herosection a {
-    margin: 10px 0 0 !important;
+  #herosection .hero h1 {
+    font-size: var(--h2);
   }
 
-  #content {
-    padding: 120px 0 50px !important;
+  #herosection .hero p {
+    font-size: var(--h5);
   }
 
-  #services h3 {
-    font-size: 2rem;
+  #services {
+    margin: 350px 0 0 !important;
   }
 
-  #content .services-list li .service-box {
-    width: 50%;
+  h3 {
+    font-size: var(--h3) !important;
   }
 
-  #social {
-    margin: 10% 3%;
+  h4 {
+    font-size: var(--h4) !important;
+  }
+
+  .service-box {
+    width: 50vw !important;
+  }
+
+  .service-box p {
+    font-size: var(--h5) !important;
+  }
+
+  #social i {
+    font-size: 5em !important;
   }
 
 }
@@ -498,116 +506,110 @@ footer {
     display: none !important;
   }
 
+  #mobile {
+    display: none;
+  }
+
   #desktop {
-    display: block;
+    display: flex;
   }
 
   #herosection {
-    margin: 30% 3% 20%;
+    margin: 450px 0 0;
   }
 
-  #content {
-    padding: 100px 0 50px;
+  #herosection h1 {
+    font-size: var(--h1) !important;
   }
 
-  #services h3 {
-    font-size: 2rem;
+  #herosection p {
+    margin: 20px 20px;
   }
 
-  #content .services-list {
-    flex-direction: row;
-    justify-content: center;
+  #services {
+    margin: 450px 0 0 !important;
   }
 
-  #content .services-list li {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+  #services .service-list {
+    gap: 40px !important;
   }
 
-  #content .services-list li .service-box {
-    width: 300px;
-    padding: 0;
-    margin: 0;
+  h3 {
+    font-size: var(--h2) !important;
   }
 
-  #social {
-    margin: 10% 3%;
+  h4 {
+    font-size: var(--h3) !important;
   }
 
-  #content {
-    margin: 0;
-    padding: 0;
+  .service-box p {
+    font-size: var(--h4) !important;
   }
 
-  #social {
-    margin: 80px 0;
+  #social ul {
+    gap: 100px !important;
   }
 
-  footer {
-    margin: 20px 0 0;
+  #social i {
+    font-size: 7em !important;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #herosection {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  #navbar a {
-    font-size: 1rem !important;
-  }
-
   #desktop ul li a {
-    font-size: 1.3rem !important;
+    font-size: var(--h5) !important;
   }
 
-  .hero h1 {
-    font-size: 3.158rem !important;
-    margin: 90px 0 0;
-    padding: 0;
+  #navbar h1 {
+    font-size: var(--h4) !important;
   }
 
-  .hero p {
-    font-size: 1.777rem !important;
+  #herosection {
+    margin: 180px 0 0;
   }
 
-  .hero a {
-    display: inline-block;
-    width: fit-content !important;
-    font-size: 1.333rem !important;
-    padding: 10px 20px !important;
+  #herosection h1 {
+    font-size: var(--h2) !important;
   }
 
-  #services h3 {
-    font-size: 2.369rem;
+  #herosection p {
+    margin: 40px 120px !important;
+    font-size: var(--h5) !important;
   }
 
-  #services ul {
-    gap: 70px !important;
+  h3 {
+    font-size: var(--h4) !important;
   }
 
-  #services ul li .service-box {
-    width: fit-content;
+  h4 {
+    font-size: var(--h5) !important;
   }
 
-  .service-box figcaption h4 {
-    font-size: 1.1rem;
+  #services .services-list {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 0px !important;
   }
 
-  .service-box figcaption p {
-    font-size: 0.750rem;
+  .service-box {
+    width: 25vw !important;
   }
 
-  #social h3 {
-    font-size: 2.369rem;
+  .service-box p {
+    font-size: var(--h5) !important;
   }
 
-  #social ul li a i {
-    font-size: 3.5rem;
+  .service-box i {
+    font-size: 5em;
   }
+
+  #social ul {
+    gap: 30px !important;
+  }
+
+  #social i {
+    font-size: 4em !important;
+  }
+
 }
